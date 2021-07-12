@@ -12,10 +12,10 @@ num1 = 24;
 caract = "Tanjiro";
 
 let nada; // valor e tipo não definidos
-console.log(nada) // return : undefined
+console.log(nada) // return = undefined
 
 let nada2 = null; // variavel vasia (sem informação)
-console.log(nada2) // return : null
+console.log(nada2) // return = null
 
 /* Variáveis constantes não podem ter o valor alterado futuramente */
 const valorPi = 3.14;
