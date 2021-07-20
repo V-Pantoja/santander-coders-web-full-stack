@@ -4,10 +4,10 @@
 }
 
 #container {
-  width: 40%;
+  width: 600px;
   height: 800px;
   padding-top: 100px;
-  margin: auto;
+  margin: 0 auto;
 
   border-radius: 10px;
 
@@ -26,16 +26,47 @@
   font-size: 2rem;
 }
 
+/* Form */
+#container form {
+  padding: 0 40px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+#container form input {
+  height: 35px;
+  width: 400px;
+  margin-right: 1rem;
+  padding: 6px 10px;
+  background-color: #0e14289c;
+  color: rgb(167, 167, 167);
+
+  border: 2px solid #0E1428;
+  border-radius: 10px;
+}
+
+#container form button {
+  width: 10rem;
+  height: 35px;
+  font-weight: bold;
+
+  border: none;
+  border-radius: 4px;
+}
+
 /* Section current */
 .current-weather {
   height: 200px;
   padding: 2rem 0;
   text-align: center;
 }
+
 .current-weather .p-temp {
   margin-top: 2rem ;
   font-size: 5.5rem;
 }
+
 .current-weather .p-desc {
   font-size: 1.8rem;
   margin: 0 0 2rem;
