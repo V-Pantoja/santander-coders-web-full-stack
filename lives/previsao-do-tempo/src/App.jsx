@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
-import './App.css'
-import { api } from './services/api-time'
+import React, { useState, useEffect } from 'react';
+import './App.css';
+import { api } from './services/api-time';
 
 function App() {
 
@@ -19,8 +19,8 @@ function App() {
   })
   
   return (
-    <div id="App">
-      <div id="Container">
+    <div id="app">
+      <div id="container">
 
         {weather &&
           <main>
@@ -28,15 +28,13 @@ function App() {
             <h1>{city}</h1>
 
             <section className="current-weather">
-              <h2>Current weather</h2>
-
-              <p>{weather.temperature}</p>
-              <p>{weather.description}</p>
+              <h2>Current Weather</h2>
+              <p className="p-temp">{weather.temperature}</p>
+              <p className="p-desc">{weather.description}</p>
             </section>
 
             <section className="forecast">
               <h2>Forecast</h2>
-
               <ol>
               {
                 weather.forecast.map(day =>
@@ -47,7 +45,6 @@ function App() {
                 )
               }
               </ol>
-
             </section>
 
           </main>

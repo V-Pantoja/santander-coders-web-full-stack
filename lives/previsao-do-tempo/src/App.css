@@ -1,20 +1,68 @@
-#App {
+#app {
   background: linear-gradient(0deg, #03254E, #048BA8 );
   height: 100vh;
 }
 
-#Container {
-  width: 80%;
+#container {
+  width: 40%;
   height: 800px;
+  padding-top: 100px;
   margin: auto;
 
-  border: 2px solid white;
   border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
 }
 
-#Container main h1 {
+#container h1 {
   font-size: 6rem;
   margin: 15px auto;
 
   text-align: center;
+}
+
+#container h2 {
+  font-size: 2rem;
+}
+
+/* Section current */
+.current-weather {
+  height: 200px;
+  padding: 2rem 0;
+  text-align: center;
+}
+.current-weather .p-temp {
+  margin-top: 2rem ;
+  font-size: 5.5rem;
+}
+.current-weather .p-desc {
+  font-size: 1.8rem;
+  margin: 0 0 2rem;
+}
+
+/* Section forecast */
+.forecast {
+  height: 300px;
+  padding: 2rem 4rem;
+  text-align: left;
+}
+
+.forecast h2 {
+  margin-bottom: 2rem;
+}
+
+.forecast ol li {
+  margin: 3rem 0;
+  height: 4rem;
+  padding: 0.6rem 1.5rem;
+
+  font-size: 1.4rem;
+
+  background-color: #0E1428;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
